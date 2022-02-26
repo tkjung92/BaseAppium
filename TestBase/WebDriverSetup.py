@@ -6,7 +6,7 @@ import warnings
 from appium import webdriver
 
 
-class Driver(unittest.TestCase):
+class WebDriverSetup(unittest.TestCase):
 
     def setUp(self):
         warnings.filterwarnings("ignore", category=ResourceWarning) # 세션 유지로 인한 리소스 워닝 로그 무시
@@ -34,3 +34,5 @@ class Driver(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
